@@ -19,7 +19,6 @@ getElement('service-container').addEventListener('click', function(e){
 
 
 
-
 // call-btn clicked
 getElement('service-container').addEventListener('click',function(e){
    if(e.target.className.includes('cart-btn')){
@@ -63,14 +62,6 @@ if ( callCoin < 20) {
         </div>
     `;
     cartContainer.append(newCart);
-
-
-
-
-
-
-
-
     
    }
    
@@ -80,10 +71,9 @@ if ( callCoin < 20) {
 
 
 
-
-
 // clear btn clicked
 getElement('btn-clear').addEventListener('click', function(){
+
     const cartContainer = getElement('cart-container');
     cartContainer.innerHTML = "";
 })
@@ -92,6 +82,7 @@ getElement('btn-clear').addEventListener('click', function(){
 
 
 // copy btn clicked
-getElement('service-container').addEventListener('click', function(){
+getElement('service-container').addEventListener('click', function(e){
     
+        
 })

@@ -89,7 +89,12 @@ getElement('service-container').addEventListener('click', function(e){
         getElement('copy-count').innerText = currentCopyCount;
     }
 
+     if(e.target.className.includes('copy-btn')){
+        const copyBtn = e.target
+        const cartNumber = copyBtn.parentNode.parentNode.children[2].children[0].innerText;
+      
 
+    }
    
         
 })

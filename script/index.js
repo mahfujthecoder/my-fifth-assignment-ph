@@ -83,6 +83,13 @@ getElement('btn-clear').addEventListener('click', function(){
 
 // copy btn clicked
 getElement('service-container').addEventListener('click', function(e){
-    
+    if(e.target.className.includes('copy-btn')) {
+        const copyCount = parseInt(getElement('copy-count').innerText);
+        const currentCopyCount = copyCount + 1;
+        getElement('copy-count').innerText = currentCopyCount;
+    }
+
+
+   
         
 })

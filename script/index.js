@@ -92,7 +92,13 @@ getElement('service-container').addEventListener('click', function(e){
      if(e.target.className.includes('copy-btn')){
         const copyBtn = e.target
         const cartNumber = copyBtn.parentNode.parentNode.children[2].children[0].innerText;
-      
+         navigator.clipboard.writeText(cartNumber)
+        .then(() => {
+            console.log("Copied:", cartNumber);
+        })
+        .catch(err => {
+            console.error("Failed to copy:", err);
+        });
 
     }
    
